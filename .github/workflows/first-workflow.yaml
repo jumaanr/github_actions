@@ -1,0 +1,14 @@
+name: my custom workflow
+on: [push,fork]
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome Message
+        run: echo "This is the first Message"
+      - name: List the files
+        run: ls
+      - name: Read the readme file
+        run: cat README.md
+        
+
