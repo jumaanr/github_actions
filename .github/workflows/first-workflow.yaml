@@ -6,9 +6,13 @@ jobs:
     steps:
       - name: Welcome Message
         run: echo "This is the first Message"
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          ref: main
       - name: List the files
         run: ls
       - name: Read the readme file
         run: cat README.md
-        
+
 
